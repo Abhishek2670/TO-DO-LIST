@@ -1,0 +1,31 @@
+<!-- 
+Create an HTML page containing a heading, a paragraph, a text box, and three buttons. Write JavaScript code to perform the following operations:
+1. Use getElementById() to access the heading and change its text to "Welcome to JavaScript DOM".
+2. Use querySelector() to select the paragraph and change its text color to blue.
+3. Use getElementsByClassName() to select all elements having the class info and change their background color to yellow.
+4. Use getElementById() to access the text box and display the entered text in an alert box when the third button is clicked. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Operations</title>
+</head>
+<body>
+
+    <h1 id="heading"><b>heading1</b> </h1>
+
+    <p class="info">my name is abhishek.</p>
+    <p class="info">And im am b.tech student.</p>
+
+    <input type="text" id="textbox" placeholder="Enter your text">
+
+    <br><br>
+
+    <button onclick="changeHeading()">Button 1</button>
+    <button onclick="changeColor()">Button 2</button>
+    <button onclick="showText()">Button 3</button>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
