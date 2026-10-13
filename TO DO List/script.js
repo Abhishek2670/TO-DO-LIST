@@ -1,23 +1,22 @@
-// DOM Elements
+
 const taskInput = document.getElementById('taskInput');
 const addBtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
 const totalCount = document.getElementById('totalCount');
 const completedCount = document.getElementById('completedCount');
 
-// Load tasks from localStorage
+
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-// Initialize app
+
 document.addEventListener('DOMContentLoaded', () => {
     renderTasks();
     updateStats();
 });
 
-// Add task on button click
 addBtn.addEventListener('click', addTask);
 
-// Add task on Enter key press
+
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         addTask();
